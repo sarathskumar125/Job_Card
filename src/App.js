@@ -1,25 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import Form from "./components/Form";
+import Card from "./components/Card";
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="bg-gray-200 w-screen">
+      <div className="pt-10">
+        <Form
+          width="2/5"
+          height="max"
+          text="base"
+          font="semibold"
+          titleText="2xl"
+          titleFont="semibold"
+        />
+      </div> 
+      <div>
+        <Card mdWidth="3/5" lgWidth="2/5"/>
+      </div>
     </div>
   );
-}
+};
 
 export default App;
